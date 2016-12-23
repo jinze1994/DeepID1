@@ -55,6 +55,7 @@ RAM: >= 12GB
 
 # 实验参数
 卷积神经网络完全按照 deepid1 的规格搭建，具体网络结构如下：
+![](https://github.com/jinze1994/DeepID1/blob/master/data/graph.png)
 
 一些其它的超参数设置如下：
 
@@ -64,6 +65,10 @@ RAM: >= 12GB
 
 # 收敛过程
 下图展示了训练过程中的收敛情况，第一幅图展示了softmax精确度随迭代次数增加的收敛情况；第二幅图展示了loss值随迭代次数的收敛情况。蓝线代表训练集的统计数据，红线代表验证集的统计数据。
+
+![](https://github.com/jinze1994/DeepID1/blob/master/data/accu.png)
+
+![](https://github.com/jinze1994/DeepID1/blob/master/data/loss.png)
 
 可以看出，精确度随迭代次数呈 S 型变化，在训练集上到达了 100%，在验证集上最终到达 95% 左右。loss 也随迭代次数不断下降，根据验证集的曲线并未上升，我们可以判断出训练并未过拟合。
 
